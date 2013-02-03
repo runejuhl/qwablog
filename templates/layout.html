@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="{{ url_for('static', filename="style.css") }}" rel="stylesheet"  type='text/css'>
+    <link href="{{ url_for('static', filename="monokai.css") }}" rel="stylesheet"  type='text/css'>
+    <link href="{{ url_for('static', filename="favicon.ico") }}" rel="shortcut icon">
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <title>qwa.dk</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="header">
+        <h1>brunsgaard </h1>
+        <p>
+          - Usage: For basic information, try the `--help' option.
+        </p>
+        <hr>
+      </div>
+        {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>
+
